@@ -30,6 +30,7 @@ namespace WinFormsApp2
             this.Visible = false;            
             Form2 showForm2 = new Form2();
             showForm2.ShowDialog;
+
             */
         }
 
