@@ -18,18 +18,24 @@ namespace WinFormsApp2
                 result += radioButton1.Text;
             else if (radioButton2.Checked)
                 result += radioButton2.Text;
-
-          if (textBox1.Text == "")
+            /*
+            if (textBox1.Text == "")
                 MessageBox.Show("이름을 입력하세요", "Warning");
-          else if(textBox2.Text != "A" && textBox2.Text !="a" && textBox2.Text !="b" && textBox2.Text != "B")
-                MessageBox.Show("소속반을 다시 확인해주세요", "Warning");
-          else if(textBox2.Text == "")
+            else if (comboBox1.Text == "")
                 MessageBox.Show("소속반을 입력하세요", "Warning");
+            else if (comboBox1.Text != "A반" && comboBox1.Text != "B반") 
+                MessageBox.Show("소속반을 다시 입력하세요", "Warning");
 
-          else MessageBox.Show("소속 반 : " + textBox2.Text + "   이름 : " + textBox1.Text + "\n선택한 메뉴 : " + result);
+            else MessageBox.Show("소속 반 : " + comboBox1.Text + "   이름 : " + textBox1.Text + "\n선택한 메뉴 : " + result);
+            */
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
