@@ -14,24 +14,27 @@ namespace WinFormsApp2
             Label label1 = new Label();
             String result = "";
 
-            if (radioButton1.Checked)
+            if (radioButton1.Checked) { 
                 result += radioButton1.Text;
-            else if (radioButton2.Checked)
+            }else if (radioButton2.Checked) { 
                 result += radioButton2.Text;
-         
-            if (textBox1.Text == "")
+            }
+
+            if (textBox1.Text == "") { 
                 MessageBox.Show("이름을 입력하세요", "Warning");
-            else if (comboBox1.Text == "")
+            } else if (comboBox1.Text == "") { 
                 MessageBox.Show("소속반을 입력하세요", "Warning");
-            else if (comboBox1.Text != "A반" && comboBox1.Text != "B반") 
+            } else if (comboBox1.Text != "A반" && comboBox1.Text != "B반") { 
                 MessageBox.Show("소속반을 다시 입력하세요", "Warning");
+            } else MessageBox.Show("소속 반 : " + comboBox1.Text + "   이름 : " + textBox1.Text + "\n선택한 메뉴 : " + result);
 
-            /* else MessageBox.Show("소속 반 : " + comboBox1.Text + "   이름 : " + textBox1.Text + "\n선택한 메뉴 : " + result);
-            this.Visible = false;            
+            //원래 창 가리기
+            this.Hide();
             Form2 showForm2 = new Form2();
-            showForm2.ShowDialog;
+            showForm2.Show();
+            
 
-            */
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
